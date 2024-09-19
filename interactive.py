@@ -231,19 +231,19 @@ if __name__ == "__main__":
       function_feedback = networkMessages('F')
     elif ans[0] == 'f':
       if ans[1] == '1':
-        filename = "/home/jvliegen/projects/attestation/ML605/bitstreams/cfg01_core_inst00_mod01_partial.bin"
+        filename = "/home/projects/attestation/ML605/bitstreams/cfg01_core_inst00_mod01_partial.bin"
         logline += strftime("%Y-%m-%d %H:%M:%S", gmtime())+ ": "+"FPGA receives file ICAP program data (pBS cfg01)"
         function_feedback = sendICAPpartialBitstream(filename)
       elif ans[1] == '2':
-        filename = "/home/jvliegen/projects/attestation/ML605/bitstreams/cfg02_core_inst00_mod02_partial.bin"
+        filename = "/home/projects/attestation/ML605/bitstreams/cfg02_core_inst00_mod02_partial.bin"
         logline += strftime("%Y-%m-%d %H:%M:%S", gmtime())+ ": "+"FPGA receives file ICAP program data (pBS cfg02)"
         function_feedback = sendICAPpartialBitstream(filename)
       elif ans[1] == 'a':
-        filename = "/home/jvliegen/projects/attestation/ML605/bitstreams/cfg02_core_inst00_mod02_partial.bin"
+        filename = "/home/projects/attestation/ML605/bitstreams/cfg02_core_inst00_mod02_partial.bin"
         logline += strftime("%Y-%m-%d %H:%M:%S", gmtime())+ ": "+"FPGA receives file ICAP program data (pBS cfg02 part 1/2)"
         function_feedback = sendICAPpartialBitstream(filename, 1)
       elif ans[1] == 'b':
-        filename = "/home/jvliegen/projects/attestation/ML605/bitstreams/cfg02_core_inst00_mod02_partial.bin"
+        filename = "/home/projects/attestation/ML605/bitstreams/cfg02_core_inst00_mod02_partial.bin"
         logline += strftime("%Y-%m-%d %H:%M:%S", gmtime())+ ": "+"FPGA receives file ICAP program data (pBS cfg02 part 2/2)"
         function_feedback = sendICAPpartialBitstream(filename, 2)
 
