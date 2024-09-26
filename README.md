@@ -29,7 +29,7 @@ To run this project, you'll need to clone the repository and install the require
 
 
 ```bash
-git clone https://github.com/AsifIqbal8739/Firmware-Attestation-for-IoT.git
+git clone https://github.com/uhanif6/Alexis.git
 cd Alexis-main
 ```
 
