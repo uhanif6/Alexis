@@ -40,33 +40,6 @@ You can install the required Python libraries by running:
 ```bash
 pip install -r requirements.txt
 ```
-## Usage
-
-1. **Preprocess the Data**
-First, you need to preprocess the bitstream data. The bitstream files (normal_bitstreams.csv and anomalous_bitstreams.csv) are located in the data/ folder. Use the provided preprocessing scripts to normalize and prepare the data for training.
-
-```bash
-python preprocess.py --input data/normal_bitstreams.csv --output data/processed_normal.csv
-python preprocess.py --input data/anomalous_bitstreams.csv --output data/processed_anomalous.csv
-```
-2. **Train the Model**
-To train the Alexis model (an autoencoder) using the preprocessed data:
-
-```bash
-python train.py --data data/processed_normal.csv --epochs 100
-```
-3. **Test the Model**
-After training, you can test the model on the anomalous bitstreams:
-
-```bash
-python test.py --model models/alexis_model.pth --data data/processed_anomalous.csv
-```
-4. **Analyze Results**
-The results, including the model's performance and anomaly detection metrics, will be saved in the results/ folder. Use the following command to visualize the performance:
-
-```bash
-python analyze.py --results results/output.csv
-```
 ## Performance
 ### Key Performance Metrics:
 
